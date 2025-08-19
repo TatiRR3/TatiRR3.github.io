@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página - Tati</title>
+  <link rel="stylesheet" href="taller33.css">
+</head>
+<body>
+     <div id="gif-besos" style="display: none; text-align: center; padding: 15px;">
+    <img src="https://media.tenor.com/images/87a47efb93bd7e5fc2ffbc49617b3414/tenor.gif" alt="Besos gif" width="200">
+  </div>
+
+  <header id="encabezado">
+    <h1>Hola, soy Tatiana Rodriguez</h1>
+    <p>¡Bienvenidxs a mi primera página web!</p>
+  </header>
+
+  <main>
+    <section class="seccion-conocimiento">
+      
+      
+    <ul>
+        <li><strong>Desarrollo web:</strong> un poquito de HTML y un poquito de CSS.</li>
+        <li><strong>Gestión:</strong>gestión de equipos y trabajo grupal.</li>
+        <li><strong>Ingles:</strong>Básico muy básico.</li>
+    </ul>
+    </section>
+
+    <section class="seccion-imagen">
+      <h2>Algo que me representa</h2>
+      <img src="https://img.freepik.com/fotos-premium/computadora-tecnologia-digital-rosa_163305-215436.jpg" alt="Laptop rosada" width="300">
+    </section>
+  </main>
+
+  <!-- Botón Besos -->
+  <div style="text-align: center; margin: 20px;">
+    <button onclick="mostrarBesos()">Besos 💋</button>
+  </div>
+
+  <footer id="pie">
+    <p>Creado por Tati - 2025</p>
+  </footer>
+
+  <!-- Script para mostrar el gif -->
+  <script>
+    function mostrarBesos() {
+      document.getElementById('gif-besos').style.display = 'block';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

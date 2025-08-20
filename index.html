@@ -13,17 +13,22 @@
 
   <header id="encabezado">
     <h1>Hola, soy Tatiana Rodriguez</h1>
-    <p>¡Bienvenidxs a mi primera página web!</p>
+    <p>¡Bienvenidxs a mi primera página web! </p>
   </header>
 
   <main>
+    <section class="seccion-sobremi">
+  <h2>Sobre mí</h2>
+  <p>Estoy en Jovenes a Programar empezando en el mundo del desarrollo web. Me gusta aprender cosas nuevas y aunque tengo cero experiencia me siento motivada a crecer en el mundo IT.</p>
+</section>
+
     <section class="seccion-conocimiento">
-      
-      
+           
     <ul>
-        <li><strong>Desarrollo web:</strong> un poquito de HTML y un poquito de CSS.</li>
-        <li><strong>Gestión:</strong>gestión de equipos y trabajo grupal.</li>
-        <li><strong>Ingles:</strong>Básico muy básico.</li>
+        <li><strong>Desarrollo web:</strong> un poco de HTML, un poco de CSS y un poquito de JS.</li> <br>
+
+        <li><strong>Habilidades:</strong>Gracias a JAP estoy puliendo mis competencias trasnversales y puedo decir que mis fuertes son: el trabajo en equipo, la resulución de conflíctos, la flexibilidad y empatía. Aún me queda mucho por mejorar pero cada vez me siento más comoda aplicando estas habilidades.</li> <br>
+        <li><strong>Ingles:</strong>Básico muy básico.</li> <br>
     </ul>
     </section>
 
@@ -49,5 +54,18 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   </script>
+  <script>
+  const secciones = document.querySelectorAll('.seccion-sobremi, .seccion-conocimiento, .seccion-imagen');
+
+  secciones.forEach(seccion => {
+    seccion.addEventListener('mouseenter', () => {
+      seccion.style.transform = 'scale(1.05)';
+    });
+    seccion.addEventListener('mouseleave', () => {
+      seccion.style.transform = 'scale(1)';
+    });
+  });
+</script>
+
 </body>
 </html>
